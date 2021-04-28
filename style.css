@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  margin-top: 3rem;
+  background: #0bd4cac4;
+}
+
+.addItems-container{
+  background: #fdfdfd;
+}
+
+.addItems-container, .displayItems-container{
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 2px solid #000000c4;
+  box-shadow: 0 5px 10px #fafafa54;
+}
+
+.addItems-title, .displayItems-title{
+  text-transform: capitalize;
+}
+
+.addItems-action, .displayItems-action{
+  border: 2px solid #272932;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.addItems-input{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #171618;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #171518;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.addItems-submit,.displayItems-clear{
+  display: block;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.addItems-submit{
+  color: #1f2124;
+  background: transparent;
+  border: 3px solid #111213;
+  transition: all 2s ease;
+}
+
+.addItems-submit:hover{
+  color: #272932;
+}
+
+.displayItems-container{
+  background: #fffffff5;
+}
+
+.displayItems-title{
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.grocery-item{
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 1s ease-in-out;
+  margin: 0.5rem 0;
+}
+
+.grocery-item:hover{
+  background: #948e8e8f;
+}
+
+.grocery-item__title{
+  text-align: left;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.grocery-item__link{
+  color: red;
+  transition: all 2s linear;   
+}
+
+.grocery-item:hover .grocery-item__link{
+  transform: scale(2);
+}
+
+.displayItems-clear{
+  color: #000000;
+  background: transparent;
+  border: 3px solid #000000;
+  transition: all 2s ease;
+}
+
+.displayItems-clear{
+  background: #000000;
+  color:#000000;
+  outline:none;
+  background: transparent;
+}
+/* Add utility action classes */
+.alert{
+  color: red;
+  border-color: red;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.success{
+  color:rgb(32, 184, 32);
+  border-color: rgb(32, 184, 32);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+  body{
+      grid-template-columns: 50%;
+  }
+}
