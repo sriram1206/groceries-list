@@ -9,7 +9,7 @@ body{
   grid-template-columns: 80%;
   justify-content: center;
   margin-top: 3rem;
-  background:grey silver;
+  background:rgb(55, 137, 245)
 }
 
 .addItems-container{
